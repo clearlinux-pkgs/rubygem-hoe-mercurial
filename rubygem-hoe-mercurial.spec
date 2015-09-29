@@ -4,7 +4,7 @@
 #
 Name     : rubygem-hoe-mercurial
 Version  : 1.4.1
-Release  : 6
+Release  : 7
 URL      : https://rubygems.org/downloads/hoe-mercurial-1.4.1.gem
 Source0  : https://rubygems.org/downloads/hoe-mercurial-1.4.1.gem
 Summary  : No detailed summary available

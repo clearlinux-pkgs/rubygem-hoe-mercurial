@@ -1,0 +1,382 @@
+2014-04-05  Michael Granger  <ged@FaerieMUD.org>
+
+	* History.rdoc, lib/hoe/mercurial.rb:
+	Bump the patch version, update history.
+	[f357a4b89646] [tip]
+
+	* lib/hoe/mercurial.rb:
+	Use pessimistic versioning for added dev dep
+	[707dacd7b34d]
+
+	* .rvmrc:
+	Update rvmrc
+	[586da5dbf583]
+
+2012-03-28  Michael Granger  <ged@FaerieMUD.org>
+
+	* .hgtags:
+	Added tag v1.4.0 for changeset 6836b1629c14
+	[1426def6dd72]
+
+	* .hgsigs:
+	Added signature for changeset dc5d4164b836
+	[6836b1629c14] [v1.4.0]
+
+	* History.rdoc, lib/hoe/mercurial.rb:
+	Bumped minor version, updated history.
+	[dc5d4164b836]
+
+	* lib/hoe/mercurial.rb:
+	Cleanup whitespace
+	[3d738dd2802e]
+
+	* .rvm.gems, .rvmrc:
+	Add rvm environment.
+	[d98b8529bf64]
+
+2011-09-28  Michael Granger  <ged@FaerieMUD.org>
+
+	* Rakefile:
+	Check the manifest *before* tagging for release.
+	[51ac6d8f66ea]
+
+	* .hgtags:
+	Added tag v1.3.1 for changeset cd3e77f1edfe
+	[e4f1e7143930]
+
+	* .hgsigs:
+	Added signature for changeset da11111578a2
+	[cd3e77f1edfe] [v1.3.1]
+
+	* .hgtags:
+	Removed tag v1.3.1
+	[da11111578a2]
+
+	* Manifest.txt, Rakefile:
+	Updated the Manifest for release.
+	[3156110c8231]
+
+	* .hgtags:
+	Added tag v1.3.1 for changeset 894ae3a85aa8
+	[9987a79e37f1]
+
+	* .hgsigs:
+	Added signature for changeset 0c56ccc8acc8
+	[894ae3a85aa8]
+
+	* History.md, History.rdoc, README.md, README.rdoc, Rakefile,
+	lib/hoe/mercurial.rb:
+	Fixed a bug in the ordering of tags returned by the
+	Hoe::Mercurial#get_unhistoried_version_tags method.
+	[0c56ccc8acc8]
+
+2011-09-19  Michael Granger  <ged@FaerieMUD.org>
+
+	* .hgtags:
+	Added tag v1.3.0 for changeset e147ed01546a
+	[c77d2d339ca8]
+
+	* .hgsigs:
+	Added signature for changeset 6202ad2cdecf
+	[e147ed01546a] [v1.3.0]
+
+	* History.md:
+	Add an entry for v1.2.2 to the History file. Heh.
+	[6202ad2cdecf]
+
+	* lib/hoe/mercurial.rb:
+	Fix a typo.
+	[4f7ef7288af8]
+
+	* History.md, README.md:
+	Updated History file, README.
+	[e14034e04dc2]
+
+	* lib/hoe/mercurial.rb:
+	Fix the 'check_history' task name in the :prep_release task, include
+	the prospective release tag by default.
+	[7290dcdd525d]
+
+	* Rakefile, lib/hoe/mercurial.rb:
+	Add a flag to enable history-checking when releasing.
+	[a0292d2bd6e2]
+
+	* lib/hoe/mercurial.rb:
+	Bumping minor version for release.
+	[33df43e98ae8]
+
+	* History.md, Rakefile, lib/hoe/mercurial.rb:
+	Added a :check_history task to check the Hoe history file to be sure
+	it has an entry for each release.
+	[df38c14b8f24]
+
+2011-08-22  Michael Granger  <ged@FaerieMUD.org>
+
+	* .hgtags:
+	Added tag v1.2.2 for changeset b9dd702ee5ad
+	[0b7e428b14ca]
+
+	* .hgsigs:
+	Added signature for changeset ea3610ef4e44
+	[b9dd702ee5ad] [v1.2.2]
+
+	* lib/hoe/mercurial.rb:
+	Bump the patch version.
+	[ea3610ef4e44]
+
+	* Rakefile, lib/hoe/mercurial.rb:
+	Don't overlay existing mercurial tasks if an 'hg:checkin' task
+	already exists.
+	[5c5e965d56cf]
+
+2011-02-01  Michael Granger  <ged@FaerieMUD.org>
+
+	* .hgtags:
+	Added tag v1.2.1 for changeset 83ba29609927
+	[2a9c0c286861]
+
+	* .hgsigs:
+	Added signature for changeset 49f7b2f6512b
+	[83ba29609927] [v1.2.1]
+
+	* History.md, Rakefile:
+	Update history, make hoe dependency less-pessimistic.
+	[49f7b2f6512b]
+
+2011-01-13  Michael Granger  <ged@FaerieMUD.org>
+
+	* lib/hoe/mercurial.rb:
+	Bumping version.
+	[40437c57c51a]
+
+	* Rakefile, lib/hoe/mercurial.rb:
+	Consistency fixes.
+	[8df184163622]
+
+2011-01-07  Michael Granger  <ged@FaerieMUD.org>
+
+	* Rakefile, lib/hoe/mercurial.rb:
+	Fixed the add_include_dirs call, describe the 'ci' task
+	[6fccb9d4c83f]
+
+2011-01-05  Michael Granger  <ged@FaerieMUD.org>
+
+	* .hgtags:
+	Added tag v1.2.0 for changeset bcbb1ff4a291
+	[c3e64a0b167b]
+
+	* .hgsigs:
+	Added signature for changeset e57850fcbb4c
+	[bcbb1ff4a291] [v1.2.0]
+
+	* lib/hoe/mercurial.rb:
+	Removed old attributes:
+	* 'hg_repo', the task now just uses the Mercurial 'default' or
+	'default-push' path.
+	* 'hg_release_branch', which wasn't really used as a branch
+
+	hoe-mercurial now injects itself as a dev dependency.
+	[e57850fcbb4c]
+
+2011-01-04  Michael Granger  <ged@FaerieMUD.org>
+
+	* Rakefile:
+	Set the ENV[VERSION]' to the spec.version, since there's a guard
+	against double-releasing already based on hg tags
+	[c66b0b668360]
+
+	* History.md:
+	Belatedly updating the History file.
+	[ee3f16eb9ae4]
+
+	* .hgtags:
+	Added tag v1.1.1 for changeset d28926dedd51
+	[bb77ac28bc62]
+
+	* .hgsigs:
+	Added signature for changeset 245a995c1ba4
+	[d28926dedd51] [v1.1.1]
+
+	* lib/hoe/mercurial.rb:
+	Version bump to 1.1.1.
+	[245a995c1ba4]
+
+	* lib/hoe/mercurial.rb:
+	Simplify the hg:checkin prerequisites list
+	[341f404d8909]
+
+	* Rakefile:
+	Use Hoe.add_include_dirs instead of require_relative.
+
+	 diff --git a/Rakefile b/Rakefile
+	--- a/Rakefile +++ b/Rakefile @@ -4,16 +4,7 @@ require 'hoe' require
+	'rake/clean'
+
+	-# 1.9.2 and later require explicit relative require
+	-if defined?( require_relative )
+	-	$stderr.puts "Requiring relative lib/hoe/mercurial..."
+	-	require_relative "lib/hoe/mercurial"
+	-	$stderr.puts " require done."
+	-else
+	-	$LOAD_PATH.unshift( 'lib' )
+	-	require 'hoe/mercurial'
+	-end
+	-
+	+Hoe.add_include_dirs 'lib/hoe'
+
+	 Hoe.plugin :mercurial Hoe.plugin :signing diff --git
+	a/lib/hoe/mercurial.rb b/lib/hoe/mercurial.rb
+	--- a/lib/hoe/mercurial.rb +++ b/lib/hoe/mercurial.rb @@ -579,7
+	+579,7 @@
+
+	 desc "Check the current code in if tests pass"
+	-				task :checkin => ['hg:pull', 'hg:newfiles', :precheckin,
+	COMMIT_MSG_FILE] do + task :checkin => [:pull, :newfiles,
+	:precheckin, COMMIT_MSG_FILE] do targets = get_target_args()
+	$stderr.puts '---', File.read( COMMIT_MSG_FILE ), '---'
+	ask_for_confirmation( "Continue with checkin?" ) do
+	[9c5dac3e8a16]
+
+2010-12-21  Michael Granger  <ged@FaerieMUD.org>
+
+	* .hgtags:
+	Added tag v1.1.0 for changeset b5258eedbb47
+	[e9bdf9672799]
+
+	* .hgsigs:
+	Added signature for changeset 6d0d956a3ada
+	[b5258eedbb47] [v1.1.0]
+
+	* README.md, Rakefile:
+	Markdown fixes, README updates, turn on tag-signing.
+	[6d0d956a3ada]
+
+	* .hgignore, CHANGELOG.rdoc, History.md, Manifest.txt, README.md,
+	README.rdoc, Rakefile, lib/hoe/hg.rb, lib/hoe/mercurial.rb:
+	Tabify, finish name-change, split history and changelog, rdoc ->
+	Markdown
+	[500441aaf812]
+
+	* README.rdoc, Rakefile, lib/hoe/hg.rb:
+	Update the README with fork info, gem name change to hoe-mercurial,
+	bugfixes.
+	[3aebc113ee1c]
+
+2010-12-14  Michael Granger  <ged@FaerieMUD.org>
+
+	* Rakefile:
+	Require the local hoe/hg before loading plugins.
+	[66f734138092]
+
+2010-12-13  Michael Granger  <ged@FaerieMUD.org>
+
+	* Rakefile, lib/hoe/hg.rb:
+	Hoespec update,
+	* Add myself to the developers list, as 'hg churn' says 56% of the
+	code is my fault.
+	* Move the 'ci' task into the plugin
+	* Add a :pre task for making prerelease gems so I can eat my own food
+	* Bump hoe dependency to 2.8.0
+	* Make the hoe depedency a pessimistic
+	* Change versioning to use the semantic versioning standard for tags
+	[757913bd6273]
+
+2010-12-10  Michael Granger  <ged@FaerieMUD.org>
+
+	* lib/hoe/hg.rb:
+	Only sign if hg_sign_tags is true
+	[9401777a9ead]
+
+2010-12-08  Michael Granger  <ged@FaerieMUD.org>
+
+	* Rakefile:
+	Default ENV['VERSION']
+	[78b1b7a07509]
+
+	* lib/hoe/hg.rb:
+	Fix the tag-extractor function
+	[08eb1bdc0a57]
+
+	* .hgignore, Rakefile, lib/hoe/hg.rb:
+	Merging in my Mercurial rake task library.
+	* Fixes for 1.9.2
+	* Adding tasks for checkin, pull, push, and a (IMO) cleaner release-
+	check task, hooked on 'prerelease' instead of 'release_sanity', as
+	there are circumstances in which you might want to release with
+	outstanding changes (e.g., preprelease gems)
+	[e875bbbdfc06]
+
+2010-01-15  mml  <mml>
+
+	* .hgtags:
+	tagging r1.0.5 for release
+	[0f0b88dd5cba]
+
+	* CHANGELOG.rdoc, Rakefile, lib/hoe/hg.rb:
+	updated changelog & bumprev
+	[385c3a28eb3d] [r1.0.5]
+
+	* CHANGELOG.rdoc, README.rdoc:
+	bumped rev
+	[0a9a4b6d25c9]
+
+	* lib/hoe/hg.rb:
+	bumped rev
+	[1e6d706b5749]
+
+	* Rakefile:
+	removed auto-set of VER
+	[02a6bde36a66]
+
+	* .hgtags:
+	tagging r1.0.3 for release
+	[e44ecb58aeee]
+
+	* CHANGELOG.rdoc, lib/hoe/hg.rb:
+	fixie
+	[18c33e15c18b] [r1.0.3]
+
+	* Rakefile, lib/hoe/hg.rb:
+	more updates
+	[ced484fa5698]
+
+	* .hgtags:
+	tagging r1.0.1 for release
+	[af15ccec537a]
+
+	* .hgtags:
+	tagging r1.0.0 for release
+	[4597b7507145] [r1.0.1]
+
+	* README.rdoc, lib/hoe/hg.rb:
+	fixed sanity check
+	[b687d8a8393e] [r1.0.0]
+
+	* CHANGELOG.rdoc:
+	changelog update
+	[c9ab41f8f4f3]
+
+	* CHANGELOG.rdoc, lib/hoe/hg.rb:
+	removed changelog generation stuff.
+	[1da95eeab61b]
+
+	* .hgignore, Manifest.txt, Rakefile, lib/hoe/hg.rb:
+	removed some comments, ported sanity
+	[64235fa1b635]
+
+	* Manifest.txt, lib/hoe/hg.rb:
+	ported to use hg
+	[44e73e6cc634]
+
+	* .hgtags:
+	Removed tag bar
+	[48ae61cd50eb]
+
+	* .hgtags:
+	Added tag bar for changeset 5163b27315b4
+	[c2cd50b7e784]
+
+	* .hgignore, CHANGELOG.rdoc, Manifest.txt, README.rdoc, Rakefile,
+	lib/hoe/hg.rb:
+	r1
+	[5163b27315b4]
